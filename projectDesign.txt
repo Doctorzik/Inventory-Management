@@ -1,0 +1,38 @@
+Project Objectives
+
+This project aims to effectively manage inventory for specific products. More different types of products 
+can be added later.
+ 
+
+
+Project Requirement: These are the task or outcome that must be meet to ensure project completion and success.
+
+The project will meet the following requirements to be marked as completed
+
+Functional requirements
+
+1. Users should be able to add products to the inventory
+2. Users should be able to update the a product in the inventory
+3. Users should be able to view all products in the inventory
+4. Users should be able to remove a products from the inventory
+
+
+Non Functional requirements: These are requirements or behaviours of the under specific conditions.
+
+1. The user should be able to add task before 4 prompts
+
+
+
+
+Design Outline
+
+Modules 
+inventory 
+
+methods
+
+addProduct
+viewProduct
+updateProduct
+deleteProduct
+

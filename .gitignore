@@ -1,0 +1,66 @@
+# .gitignore
+
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+.bin
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+out/
+bin/
+obj/
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache/options
+.vs/
+
+# Build logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Debug/Release configuration
+*.dbmdl
+*.pdb
+
+# Other IDE specific
+*.cache
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+
+# Coverage directory
+coverage/

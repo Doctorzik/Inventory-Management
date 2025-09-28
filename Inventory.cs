@@ -156,6 +156,12 @@ class Inventory
 
 
   }
+
+  // This method removes a single product from the inventory.
+  // Takes the suppose Id of the product to find the product in the list of Product
+  // If the Id is invalid i.e not a number, the funtion returns. 
+  // if the string is not found, the user is informed, the function returns
+  //  Else it remove that product from the list.
   public void RemoveProduct(string productId)
   {
     int id;
@@ -178,14 +184,17 @@ class Inventory
 
   public static void SaveProduct()
   {
+    // check if the product table is empty
     if (products.Count == 0)
-    {
+    { // inform the user that there is no product
       Console.WriteLine("Sorry No Product in the inventory!");
       return;
     }
-
+    // Convert the List to products to json string by serializing it.
     string json = JsonSerializer.Serialize(products);
+     // Create a  json file then add save the json string in the file
     File.WriteAllText("inventory.json", json);
+    // Inform the user that the file has been saved with the number of products in the list
     Console.WriteLine($"{products.Count} has been saved to file");
   }
 }

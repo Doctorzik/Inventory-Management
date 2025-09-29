@@ -7,7 +7,8 @@ using System.Text.Json;
 
 class Inventory
 {
-  int count = 0;
+  // Create a private  count number to check how many times the view method will be called
+  private int count = 0;
   static readonly List<Product> products = new();
 
 
@@ -192,7 +193,7 @@ class Inventory
     }
     // Convert the List to products to json string by serializing it.
     string json = JsonSerializer.Serialize(products);
-     // Create a  json file then add save the json string in the file
+    // Create a  json file then add save the json string in the file
     File.WriteAllText("inventory.json", json);
     // Inform the user that the file has been saved with the number of products in the list
     Console.WriteLine($"{products.Count} has been saved to file");

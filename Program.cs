@@ -26,6 +26,7 @@
       switch (number)
       {
         case "1":
+        
           inventory.ViewProducts();
           break;
         case "2":
